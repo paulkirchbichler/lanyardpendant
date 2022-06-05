@@ -27,8 +27,8 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 		
 		parent::__construct($orientation, $unit, $format, $unicode, $encoding, $diskcache, $pdfa);
 			
-		$this->SetCreator("Norddeutsch Gesund");
-		$this->SetAuthor("Norddeutsch Gesund");
+		$this->SetCreator("Creator");
+		$this->SetAuthor("Author");
 		
 		$this->SetTitle($PDFName);
 		$this->SetSubject($PDFName);

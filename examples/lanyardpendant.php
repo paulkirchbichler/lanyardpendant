@@ -1,7 +1,5 @@
 <?php
 
-use setasign\Fpdi;
-
 require_once('../src/LanyardPendant.class.php');
 
 $pdfName = 'Namensschild.pdf';

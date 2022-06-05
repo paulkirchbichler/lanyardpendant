@@ -7,8 +7,8 @@
 namespace kibi\\Lanyard\\
 
 // TCPDF Library laden
-require_once(__DIR__.'/../libaries/tcpdf/tcpdf.php');
-require_once(__DIR__.'/../libaries/fpdi/src/autoload.php');
+require_once(__DIR__.'/../libraries/tcpdf/tcpdf.php');
+require_once(__DIR__.'/../libraries/fpdi/src/autoload.php');
 use setasign\Fpdi;
 
 function LanyardPendant($PDFName){

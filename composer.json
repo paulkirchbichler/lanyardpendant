@@ -4,17 +4,11 @@
 	"type": "package",
 	"version": "1.0.0",
 	"license": "mit",
-	"authors": [
-		{
-			"name": "Paul Kirchbichler",
-			"email": "mail@paulkirchbichler.com",
-			"role": "Developer"
-		}
-	],
 	"minimum-stability": "dev",
+	"require": {},
 	"autoload": {
-		"psr-4": {
-			"kibi\\LanyardPendant\\": "src/"
-		}
+        "classmap": [
+            "src/LanyardPendant.class.php",
+        ]
 	}
 }

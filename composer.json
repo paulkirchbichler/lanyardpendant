@@ -8,7 +8,7 @@
 	"require": {},
 	"autoload": {
         "classmap": [
-            "src/LanyardPendant.class.php",
+            "src/LanyardPendant.class.php"
         ]
 	}
 }

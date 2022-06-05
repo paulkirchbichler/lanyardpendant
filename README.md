@@ -9,7 +9,7 @@ LanyardPendant is a PHP class for generating PDF lanyard pendants
 
 ```php
 
-require_once('../src/LanyardPendant.class.php');
+require_once('vendor/autoload.php');
 
 $pdfName = 'Namensschild.pdf';
 

@@ -1,14 +1,9 @@
 <?php
 
-//	Via Composer:
-//	composer require tecnickcom/tcpdf
-//	composer require setasign/fpdi
-
-namespace kibi\\Lanyard\\
-
-// TCPDF Library laden
+// load TCPDF & FPDI
 require_once(__DIR__.'/../libraries/tcpdf/tcpdf.php');
 require_once(__DIR__.'/../libraries/fpdi/src/autoload.php');
+
 use setasign\Fpdi;
 
 function LanyardPendant($PDFName){
@@ -50,16 +45,9 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 		
 		$FooterMargin = 6.8;
 		$this->SetFooterMargin($FooterMargin);
-
-		// Automatisches Autobreak der Seiten
-//		$this->SetAutoPageBreak(TRUE, $FooterMargin);
 		
 		// KEIN Automatisches Autobreak der Seiten
 		$this->SetAutoPageBreak(FALSE, $FooterMargin);
-
-		// Image Scale 
-		/*$this->setImageScale(PDF_IMAGE_SCALE_RATIO);*/
-//		$fontname = TCPDF_FONTS::addTTFfont(__DIR__.'\..\fonts\arial\arial.ttf', '', '', 32);
 		
 		// Schriftart
 		$this->SetFont('helvetica', '', 9);

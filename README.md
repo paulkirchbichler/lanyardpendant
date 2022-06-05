@@ -15,8 +15,8 @@ $pdfName = 'Namensschild.pdf';
 
 $pdf = LanyardPendant($pdfName);
 
-$pdf->SetCreator("Norddeutsch Gesund");
-$pdf->SetAuthor("Norddeutsch Gesund");
+$pdf->SetCreator("Creator name");
+$pdf->SetAuthor("Author name");
 
 //Nur zu Testzwecken
 $pdf->setPDFBackgroundDocumentPath(dirname(__FILE__).'/LanyardPendantBackground-sample.pdf'); 

@@ -7,7 +7,8 @@ with [Composer](https://packagist.org/packages/kibi/lanyardpendant)
 
 ```composer require kibi/lanyardpendant```
 
-via require
+
+via require (download current release manually)
 
 ```php
 require_once('path/to/src/LanyardPendant.class.php');

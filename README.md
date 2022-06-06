@@ -9,7 +9,9 @@ with [Composer](https://packagist.org/packages/kibi/lanyardpendant)
 
 via require
 
-```require_once('vendor/autoload.php');```
+```php
+require_once('path/to/src/LanyardPendant.class.php');
+```
 
 ## Sample usage
 

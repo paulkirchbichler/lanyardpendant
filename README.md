@@ -52,6 +52,7 @@ $pdf->Output($pdfName.'.pdf', 'I');
 
 ## Print lanyard pendants using Druckerwolke (Cloud Printing)
 
+### Setup your Account 
 1. Create your account at https://druckerwolke.de 
 2. Create your API username and password in the login area at https://durckerwolke.de.
 3. Request your API key at support@druckerwolke.de
@@ -59,13 +60,11 @@ $pdf->Output($pdfName.'.pdf', 'I');
 ### Install [Druckerwolke](https://github.com/paulkirchbichler/druckerwolke) 
 with Composer
 
-```
-composer require kibi/druckerwolke
-```
+```composer require kibi/druckerwolke```
 
 via require (download current release manually)
 
-```
+```php
 require_once('path/to/src/Druckerwolke.class.php');
 ```
 Add the following section to your code:

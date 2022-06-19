@@ -49,3 +49,46 @@ $pdf->writePersonalQRCode('https://example.com/link/to/my/profile');
 $pdf->Output($pdfName.'.pdf', 'I');
 
 ```
+
+# Print lanyard pendants using Druckerwolke (Cloud Printing)
+
+1. Create your account at https://druckerwolke.de 
+2. Create your API username and password in the login area at https://durckerwolke.de.
+3. Request your API key at support@druckerwolke.de
+
+Add the following section to your code:
+
+```php
+
+$file_content = $pdf->Output($pdfName.'.pdf', 'S');
+
+$username = 'XXX';
+$password = 'XXXXXXXXXX';
+$api_key = 'XXXXXXXX-XXXX-MXXX-NXXX-XXXXXXXXXXXX';
+
+$druckerwolke = Druckerwolke($username, $password, $api_key);
+
+$printers = $druckerwolke->printers();
+
+// SELECT THE PRINTER
+$printer_id = $printers[0]->Id; //we are using the first printer
+
+$data = [
+	'FileName' => $pdfName,
+	'MimeType' => 'application/pdf',
+	'FileDataBase64' => base64_encode($file_content),
+	'JobName' => 'Printing: '.$pdfName,
+	'DocumentVersion' => 0,
+	'InputQueueId' => $printer_id,
+	'FileSize' => 0,
+	'JobSettings' => [
+		'PageOrientation' => 0
+	],
+	'AdditionalParameters' => []
+];
+
+$result = $druckerwolke->add_document($data);
+
+```
+
+

@@ -2,7 +2,7 @@
 	"name": "kibi/lanyardpendant",
 	"description": "LanyardPendant is a PHP class for generating PDF lanyard pendants",
 	"type": "package",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "mit",
 	"minimum-stability": "dev",
 	"require": {},

@@ -41,9 +41,9 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 		$this->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 		// Auswahl der Margins (Ränder)
-		$this->SetMargins(10, 18, 10, false);
+		$this->SetMargins(8.1, 17, 8.1, false);
 		
-		$FooterMargin = 6.8;
+		$FooterMargin = 7.3;
 		$this->SetFooterMargin($FooterMargin);
 		
 		// KEIN Automatisches Autobreak der Seiten
@@ -131,8 +131,8 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 	}
 	
 	public function writePersonalQRCode($url){
-		$qr_code_width = 25;
-		$qr_code_height = 25;
+		$qr_code_width = 28;
+		$qr_code_height = 28;
 			
 		$page_width = parent::getPageWidth();
 		$page_height = parent::getPageheight();

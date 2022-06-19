@@ -56,6 +56,18 @@ $pdf->Output($pdfName.'.pdf', 'I');
 2. Create your API username and password in the login area at https://durckerwolke.de.
 3. Request your API key at support@druckerwolke.de
 
+### Install [Druckerwolke](https://github.com/paulkirchbichler/druckerwolke) 
+with Composer
+
+```
+composer require kibi/druckerwolke
+```
+
+via require (download current release manually)
+
+```
+require_once('path/to/src/Druckerwolke.class.php');
+```
 Add the following section to your code:
 
 ```php

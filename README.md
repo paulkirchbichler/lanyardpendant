@@ -50,7 +50,7 @@ $pdf->Output($pdfName.'.pdf', 'I');
 
 ```
 
-# Print lanyard pendants using Druckerwolke (Cloud Printing)
+## Print lanyard pendants using Druckerwolke (Cloud Printing)
 
 1. Create your account at https://druckerwolke.de 
 2. Create your API username and password in the login area at https://durckerwolke.de.

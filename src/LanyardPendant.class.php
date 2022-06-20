@@ -128,6 +128,7 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 		$this->writeBreak();
 		$this->writeBreak();
 		$this->writeText($content);
+		return $this;
 	}
 	
 	public function writePersonalQRCode($url){

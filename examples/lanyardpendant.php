@@ -10,7 +10,7 @@ $pdf->SetCreator("Creator");
 $pdf->SetAuthor("Author");
 
 //Nur zu Testzwecken
-$pdf->setPDFBackgroundDocumentPath(dirname(__FILE__).'/LanyardPendantBackground-sample.pdf'); 
+//$pdf->setPDFBackgroundDocumentPath(dirname(__FILE__).'/L<sanyardPendantBackground-sample.pdf'); 
 	
 $pdf->AddPage();
 

@@ -41,7 +41,7 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 		$this->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 		// Auswahl der Margins (Ränder)
-		$this->SetMargins(8.1, 17, 8.1, false);
+		$this->SetMargins(8.1, 14, 8.1, false);
 		
 		$FooterMargin = 7.3;
 		$this->SetFooterMargin($FooterMargin);
@@ -143,7 +143,7 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 //		$position_y = 102;
 		
 		// Rechts unten positionieren
-		$position_x = $page_width - parent::getMargins()['right'] - $qr_code_width; 
+		$position_x = $page_width - parent::getMargins()['right'] - $qr_code_width + 2; 
 		$position_y = $page_height - parent::getMargins()['bottom'] - $qr_code_height;
 		
 		$style = array(

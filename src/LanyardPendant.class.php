@@ -110,12 +110,12 @@ class LanyardPendant extends Fpdi\TcpdfFpdi{
 			$font_size = $font_size - (0.5 * (mb_strlen($name) - 4));
 		}
 		
-		$this->writeHTML('<p style="font-size: '.$font_size.'; line-height: 1.4;">'.strtoupper($name).'</p>', true, false, true, false, '');
+		$this->writeHTML('<p style="font-size: '.$font_size.'; line-height: 1.4;">'.mb_strtoupper($name).'</p>', true, false, true, false, '');
 		return $this;
 	}
 	
 	public function writePersonalCompany($company){
-		$this->writeHTML('<br><p style="font-size: 13; line-height: 1.4; font-weight: bold">'.strtoupper($company).'</p>', true, false, true, false, '');
+		$this->writeHTML('<br><p style="font-size: 13; line-height: 1.4; font-weight: bold">'.mb_strtoupper($company).'</p>', true, false, true, false, '');
 		return $this;
 	}
 	
